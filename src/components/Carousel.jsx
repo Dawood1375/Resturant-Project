@@ -3,6 +3,12 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import MenuBar from "./Menubar";
 import "../index.css";
 
+// Import images
+import slide1 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import slide2 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import slide3 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import slide4 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,25 +19,25 @@ const Carousel = () => {
       title: "It's Quick & Amusing!",
       subtitle: "Lorem ipsum dolor sit amet consectetur.",
       description: "Refined tastes for unforgettable moments.",
-      image: "url('../src/assets/img/close-up-delicious-chicken-meal.jpg')",
+      image: slide1,
     },
     {
       title: "Delight in Every Bite!",
       subtitle: "Lorem ipsum dolor sit amet consectetur.",
       description: "Lorem ipsum dolor sit amet consectetur.",
-      image: "url('../src/assets/img/close-up-delicious-chicken-meal.jpg')",
+      image: slide2,
     },
     {
       title: "Fresh & Delicious!",
       subtitle: "Lorem ipsum dolor sit amet consectetur.",
       description: "Lorem ipsum dolor sit amet consectetur.",
-      image: "url('../src/assets/img/close-up-delicious-chicken-meal.jpg')",
+      image: slide3,
     },
     {
       title: "A Taste of Joy!",
       subtitle: "Lorem ipsum dolor sit amet consectetur.",
       description: "Lorem ipsum dolor sit amet consectetur.",
-      image: "url('../src/assets/img/close-up-delicious-chicken-meal.jpg')",
+      image: slide4,
     },
   ];
 
@@ -68,7 +74,7 @@ const Carousel = () => {
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-500 overflow-hidden"
           style={{
-            backgroundImage: slides[currentSlide].image,
+            backgroundImage: `url(${slides[currentSlide].image})`,
             zIndex: -1,
             transform: "scale(1.1)",
             filter: "blur(10px)", // Apply blur effect
@@ -131,7 +137,7 @@ const Carousel = () => {
       {/* Right Section - Menu and Image (Hidden on Small Screens) */}
       <div className="md:w-1/2 relative w-full h-full hidden md:block">
         <img
-          src="../src/assets/img/close-up-delicious-chicken-meal.jpg"
+          src={slide1}
           alt="Delicious grilled chicken with garnish"
           className="w-full h-full object-cover"
         />
