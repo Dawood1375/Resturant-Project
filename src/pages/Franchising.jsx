@@ -1,17 +1,18 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import Banner from "../components/Banner";
-import "../index.css";
 import MenuBar from "../components/Menubar";
 import ImageCarousel from "../components/ImageCarousel";
+import "../index.css";
+
+// Import images
+import franchisingBanner from "../assets/img/frame4.png"; // Importing the banner image
 
 const Franchising = () => {
   return (
     <>
       <MenuBar />
-      <Banner
-        backgroundImage="../src/assets/img/frame4.png"
-        title="OUR BRANCHES"
-      />
+      {/* Use the imported banner image */}
+      <Banner backgroundImage={franchisingBanner} title="OUR BRANCHES" />
       <ImageCarousel />
       <h1 className="text-3xl m-auto text-center mt-8">
         We Are Now in Bristol
@@ -23,7 +24,7 @@ const Franchising = () => {
           marginLeft: "10%",
         }}
       >
-        <div className="flex-1 mb-8 md:mb-0 flex  md:justify-start">
+        <div className="flex-1 mb-8 md:mb-0 flex md:justify-start">
           <div className="md:text-left">
             <h1 className="text-2xl text-gray-800">Pouros and Sons</h1>
             <p className="mt-2">
@@ -31,7 +32,7 @@ const Franchising = () => {
               <br />
               country
             </p>
-            <div className="flex  mt-2  md:justify-start">
+            <div className="flex mt-2 md:justify-start">
               <div className="flex text-red-500">
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>

@@ -13,7 +13,6 @@ const Home = () => {
   return (
     <>
       <Carousel />
-
       <br />
       <AboutUs />
       <br />

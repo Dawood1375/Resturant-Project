@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
 
+// Importing images
+import instaIcon from "../assets/img/insta.png";
+import fbIcon from "../assets/img/fb_icon.png";
+import twitterIcon from "../assets/img/twitter.png";
+
 const Navbar = () => {
   return (
     <div className="w-screen flex flex-col">
@@ -31,7 +36,7 @@ const Navbar = () => {
           >
             <img
               alt="Instagram"
-              src="../src/assets/img/insta.png"
+              src={instaIcon}
               style={{
                 height: "20px",
               }}
@@ -43,7 +48,7 @@ const Navbar = () => {
           >
             <img
               alt="Facebook"
-              src="../src/assets/img/fb_icon.png"
+              src={fbIcon}
               style={{
                 height: "20px",
               }}
@@ -51,11 +56,11 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="text-muted-foreground hover:text-primary transition "
+            className="text-muted-foreground hover:text-primary transition"
           >
             <img
               alt="Twitter"
-              src="../src/assets/img/twitter.png"
+              src={twitterIcon}
               style={{
                 height: "20px",
               }}

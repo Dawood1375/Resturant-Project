@@ -1,13 +1,17 @@
 import React from "react";
 import "../index.css";
 
+// Import the image
+import chefImage from "../assets/img/Rectangle 8863.png";
+
 const Team = () => {
+  // ChefCard component
   function ChefCard() {
     return (
       <div className="max-w-xs rounded overflow-hidden shadow-lg mx-auto">
         <img
           className="w-full"
-          src="../src/assets/img/Rectangle 8863.png"
+          src={chefImage}
           alt="Chef D.Estwood standing in a kitchen, smiling and wearing a white chef's uniform"
         />
         <div className="px-6 py-4">
@@ -21,7 +25,7 @@ const Team = () => {
   return (
     <>
       <div className="text-center">
-        <h1 className="federo-regular text-gray-900 text-4xl  mb-8">
+        <h1 className="federo-regular text-gray-900 text-4xl mb-8">
           Meet Our Chef
         </h1>
         <br />

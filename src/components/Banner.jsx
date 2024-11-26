@@ -1,5 +1,7 @@
 import React from "react";
 import "../index.css";
+import menuBannerImage from "../assets/img/menubanner.png";
+
 const Banner = ({ backgroundImage, title }) => {
   return (
     <div

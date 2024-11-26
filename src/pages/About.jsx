@@ -3,14 +3,14 @@ import MenuBar from "../components/Menubar";
 import Banner from "../components/Banner";
 import AboutUs from "../components/AboutUs";
 
+// Import image
+import aboutBannerImage from "../assets/img/top-view-delicious-pasta-arrangement.jpg";
+
 const About = () => {
   return (
     <>
       <MenuBar />
-      <Banner
-        backgroundImage="../src/assets/img/top-view-delicious-pasta-arrangement.jpg"
-        title="ABOUT US"
-      />
+      <Banner backgroundImage={aboutBannerImage} title="ABOUT US" />
       <AboutUs />
     </>
   );

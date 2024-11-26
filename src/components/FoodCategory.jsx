@@ -2,27 +2,33 @@ import React from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
 import "../index.css";
 
+// Import images
+import dessertImage1 from "../assets/img/unsplash_-lHZUkiWM74.png";
+import fastFoodImage from "../assets/img/unsplash_dphM2U1xq0U.png";
+import dessertImage2 from "../assets/img/unsplash_MRHyv-hHxgk.png";
+import dessertImage3 from "../assets/img/unsplash_q54Oxq44MZs.png";
+
 const FoodCategory = () => {
   const foodItems = [
     {
       id: 1,
       category: "Dessert",
-      image: "../src/assets/img/unsplash_-lHZUkiWM74.png",
+      image: dessertImage1,
     },
     {
       id: 2,
       category: "Fast Food",
-      image: "../src/assets/img/unsplash_dphM2U1xq0U.png",
+      image: fastFoodImage,
     },
     {
       id: 3,
       category: "Dessert",
-      image: "../src/assets/img/unsplash_MRHyv-hHxgk.png",
+      image: dessertImage2,
     },
     {
       id: 4,
       category: "Dessert",
-      image: "../src/assets/img/unsplash_q54Oxq44MZs.png",
+      image: dessertImage3,
     },
   ];
 

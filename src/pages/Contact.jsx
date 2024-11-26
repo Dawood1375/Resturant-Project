@@ -1,15 +1,16 @@
 import React from "react";
-import Banner from "../components/Banner";
 import MenuBar from "../components/Menubar";
+import Banner from "../components/Banner";
+
+// Import images
+import contactBanner from "../assets/img/frame4.png"; // Import the contact banner image
 
 const Contact = () => {
   return (
     <>
       <MenuBar />
-      <Banner
-        backgroundImage="../src/assets/img/frame4.png"
-        title="CONTACT US"
-      />
+      {/* Use the imported banner image */}
+      <Banner backgroundImage={contactBanner} title="CONTACT US" />
     </>
   );
 };

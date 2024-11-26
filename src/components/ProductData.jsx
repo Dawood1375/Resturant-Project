@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// Import images
+import image1 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import image2 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import image3 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import image4 from "../assets/img/close-up-delicious-chicken-meal.jpg";
+
 function ProductData() {
-  const images = [
-    "../src/assets/img/close-up-delicious-chicken-meal.jpg",
-    "../src/assets/img/close-up-delicious-chicken-meal.jpg",
-    "../src/assets/img/close-up-delicious-chicken-meal.jpg",
-    "../src/assets/img/close-up-delicious-chicken-meal.jpg",
-  ];
+  const images = [image1, image2, image3, image4];
 
   const [mainImage, setMainImage] = useState(images[0]);
   const [quantity, setQuantity] = useState(1);

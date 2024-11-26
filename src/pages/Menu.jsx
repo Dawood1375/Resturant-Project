@@ -5,12 +5,13 @@ import MenuLinks from "../components/MenuLinks";
 import Product from "../components/Product";
 import Jumbotron from "../components/Jumbertron";
 import { Link } from "react-router-dom";
+import menuBannerImage from "../assets/img/menubanner.png";
 import "../index.css";
 const Menu = () => {
   return (
     <>
       <MenuBar />
-      <Banner backgroundImage="../src/assets/img/menubanner.png" title="MENU" />
+      <Banner backgroundImage={menuBannerImage} title="MENU" />
       <MenuLinks />
       <div className="mb-4 ml-4" style={{ width: "200px", marginLeft: "13%" }}>
         <label className="block text-sm font-medium text-gray-700">

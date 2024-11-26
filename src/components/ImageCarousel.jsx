@@ -1,5 +1,11 @@
 import React, { useState, useRef } from "react";
 
+// Import images
+import frame4 from "../assets/img/frame4.png";
+import frame5 from "../assets/img/frame4.png";
+import frame6 from "../assets/img/frame4.png";
+import frame7 from "../assets/img/frame4.png";
+
 const ImageCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -7,13 +13,8 @@ const ImageCarousel = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const slidesRef = useRef(null);
 
-  const slides = [
-    "../src/assets/img/frame4.png",
-    "../src/assets/img/frame4.png",
-    "../src/assets/img/frame4.png",
-    "../src/assets/img/frame4.png",
-  ];
-
+  // Array of imported images
+  const slides = [frame4, frame5, frame6, frame7];
   const totalSlides = slides.length;
 
   const handleNextSlide = () => {

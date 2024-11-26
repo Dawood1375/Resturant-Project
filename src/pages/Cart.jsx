@@ -3,6 +3,7 @@ import MenuBar from "../components/Menubar";
 import Banner from "../components/Banner";
 import "../index.css";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import cartBanner from "../assets/img/menubanner.png";
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
@@ -50,10 +51,8 @@ const Cart = () => {
   return (
     <>
       <MenuBar />
-      <Banner
-        backgroundImage="../src/assets/img/menubanner.png"
-        title="CART ITEMS"
-      />
+      <Banner backgroundImage={cartBanner} title="CART ITEMS" />
+
       {/* Back to Product Details Link */}
       <div className="container mx-auto p-4">
         <Link

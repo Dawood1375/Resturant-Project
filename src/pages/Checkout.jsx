@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "../index.css";
 
+// Import images from the assets folder
+import menuBannerImage from "../assets/img/menubanner.png"; // Import the image
+
 const Checkout = () => {
   const [cart, setCart] = useState([]);
   const [name, setName] = useState("");
@@ -57,10 +60,9 @@ const Checkout = () => {
   return (
     <>
       <MenuBar />
-      <Banner
-        backgroundImage="../src/assets/img/menubanner.png"
-        title="Checkout"
-      />
+      {/* Use imported image for the Banner */}
+      <Banner backgroundImage={menuBannerImage} title="Checkout" />
+
       {/* Back to Cart */}
       <div className="container mx-auto p-4">
         <Link to="/cart" className="text-teal-500 flex items-center mb-4">

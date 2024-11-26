@@ -1,18 +1,25 @@
 import React from "react";
 import "../index.css";
 
+// Import images
+import friesImage from "../assets/img/unsplash_PxJ9zkM2wdA.png";
+import burgerImage from "../assets/img/unsplash__79ZJS8pV70.png";
+import pizzaImage from "../assets/img/unsplash_W10_NCsLVyc.png";
+import barbecueImage from "../assets/img/unsplash_MRHyv-hHxgk.png";
+import dishImage from "../assets/img/unsplash_-lHZUkiWM74.png";
+import saladImage from "../assets/img/unsplash_jpkfc5_d-DI@2x.png";
+
 const Footer = () => {
   return (
     <>
-      <div className="bg-gray-300  pt-10">
+      <div className="bg-gray-300 pt-10">
         <div className="container mx-auto py-10 px-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="px-4">
             <h2 className="text-xl federo-regular text-gray-900">LOGO</h2>
-            <p className="mt-2 " style={{ color: "#7f9290" }}>
-              {" "}
+            <p className="mt-2" style={{ color: "#7f9290" }}>
               Lorem ipsum dolor sit amet
             </p>
-            <div className="mt-4 flex rounded-lg ">
+            <div className="mt-4 flex rounded-lg">
               <input
                 type="email"
                 placeholder="Enter Your Email"
@@ -57,36 +64,36 @@ const Footer = () => {
               <li>FAQ</li>
             </ul>
           </div>
-          <div className=" mb-10">
+          <div className="mb-10">
             <h2 className="text-xl federo-regular text-gray-900">Gallery</h2>
             <div className="grid grid-cols-3 gap-2 mt-2">
               <img
-                src="../src/assets/img/unsplash_PxJ9zkM2wdA.png"
+                src={friesImage}
                 alt="Image of fries"
                 className="w-full h-full object-cover"
               />
               <img
-                src="../src/assets/img/unsplash__79ZJS8pV70.png"
+                src={burgerImage}
                 alt="Image of a burger"
                 className="w-full h-full object-cover"
               />
               <img
-                src="../src/assets/img/unsplash_W10_NCsLVyc.png"
+                src={pizzaImage}
                 alt="Image of a pizza"
                 className="w-full h-full object-cover"
               />
               <img
-                src="../src/assets/img/unsplash_MRHyv-hHxgk.png"
+                src={barbecueImage}
                 alt="Image of a barbecue"
                 className="w-full h-full object-cover"
               />
               <img
-                src="../src/assets/img/unsplash_-lHZUkiWM74.png"
+                src={dishImage}
                 alt="Image of a dish"
                 className="w-full h-full object-cover"
               />
               <img
-                src="../src/assets/img/unsplash_jpkfc5_d-DI@2x.png"
+                src={saladImage}
                 alt="Image of a salad"
                 className="w-full h-full object-cover"
               />
@@ -95,7 +102,7 @@ const Footer = () => {
         </div>
         <div className="bg-teal-500 federo-regular flex flex-col text-white text-center py-4">
           <p>Copyright © 2000-2020 logo.com. All rights reserved</p>
-          <div className=" space-x-4 mt-2">
+          <div className="space-x-4 mt-2">
             <a href="#" className="hover:underline">
               Privacy Policy
             </a>
