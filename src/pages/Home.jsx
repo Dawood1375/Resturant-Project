@@ -1,5 +1,4 @@
 import React from "react";
-import MenuBar from "../components/Menubar";
 import Carousel from "../components/Carousel";
 import AboutUs from "../components/AboutUs";
 import FoodCategory from "../components/FoodCategory";
