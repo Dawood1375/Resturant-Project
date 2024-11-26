@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import MenuBar from "./Menubar";
 import "../index.css";
 import chickenMealImage from "../assets/img/close-up-delicious-chicken-meal.jpg";
+import rightImage from "../assets/img/close-up-delicious-chicken-meal.jpg";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -168,7 +169,7 @@ const Carousel = () => {
       {/* Right Section - Menu and Image (Hidden on Small Screens) */}
       <div className="md:w-1/2 relative w-full h-full hidden md:block">
         <img
-          src="../src/assets/img/close-up-delicious-chicken-meal.jpg"
+          src={rightImage}
           alt="Delicious grilled chicken with garnish"
           className="w-full h-full object-cover"
         />
